@@ -76,16 +76,8 @@ foreach ($commands as $cmd) {
 }
 
 // Stuff we need in the HTML header
-const CSS_FILE = __DIR__ . "/src/resources/esc2html.css";
-$metaInfo = array_merge(
-    array(
+$metaInfo = array(
         "<meta charset=\"UTF-8\">",
-        "<style>"
-    ),
-    explode("\n", trim(file_get_contents(CSS_FILE))),
-    array(
-        "</style>"
-    )
 );
 
 // Final document assembly
